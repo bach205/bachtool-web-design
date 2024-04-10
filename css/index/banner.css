@@ -1,0 +1,39 @@
+/* unsynchronized part */
+.banner {
+    background-color: rgba(159, 155, 155, 0.5);
+    border-bottom-color: gray;
+    position: fixed;
+    width: 100%;
+    display: inline-block;
+    height: var(--heightbanner);
+    z-index: 100;
+}
+
+.logo {
+    background-image: url("../../image/bach_logoHD.png");
+    background-repeat: no-repeat;
+    width: 90px;
+    height: var(--heightbanner);
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+}
+
+.myHeading {
+    margin: 0;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--modetext);
+    vertical-align: top;
+    padding-top: 15px;
+    height: 41px;
+    width: 200px;
+    font-size: 20px;
+    transform: translateY(0);
+}
+
+.myHeading:hover {
+    background-color: rgba(159, 155, 155, 0.8);
+    text-decoration: underline;
+}

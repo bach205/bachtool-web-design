@@ -1,0 +1,146 @@
+:root {
+    --modescreen: white;
+    --modetext: black;
+    --heightbanner: 56px;
+}
+
+html {
+    margin: 0 !important;
+}
+
+body {
+    background-color: var(--modescreen);
+    width: 100%;
+    margin: 0 !important;
+    height: auto;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--modetext);
+}
+
+h1,
+p {
+    color: var(--modetext);
+    font-family: aktiv-grotesk, system-ui, sans-serif;
+}
+
+footer,
+header {
+    text-align: center;
+    color: var(--modetext);
+}
+
+footer {
+    margin-top: 30px;
+    border-top: 2px solid var(--modetext);
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 700;
+    background-color: rgba(235, 232, 232, 0.17);
+}
+
+.btn:hover {
+    background-color: rgb(111, 4, 112, 1);
+    box-shadow: 4px 4px 10px rgb(111, 4, 112, 1);
+}
+
+#backToTop {
+    background-color: gray;
+    font-size: 20px;
+    height: 60px;
+    width: 60px;
+    left: 95%;
+    top: 86%;
+    padding: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    box-shadow: 3px 3px 15px var(--modetext);
+    z-index: 100;
+    user-select: none;
+}
+
+.box-slider {
+    border-color: black;
+    width: 100%;
+    height: 650px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+#slider0,
+#slider1,
+#slider2,
+#slider3 {
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+
+}
+
+#slider0 img,
+#slider1 img,
+#slider2 img,
+#slider3 img {
+    width: 100%;
+    height: 100%;
+    transform: translateX(-40px);
+    filter: brightness(0.7);
+}
+
+
+
+#pre,
+#next {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    top: 50%;
+    font-size: 25px;
+    color: whitesmoke;
+    border: 1px solid white;
+    user-select: none;
+}
+
+#pre {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
+
+#pre:hover,
+#next:hover {
+    background-color: rgb(240, 248, 255, 0.3);
+}
+
+#pre:active,
+#next:active {
+    background-color: rgb(240, 248, 255, 0);
+}
+
+li {
+    list-style: none;
+    overflow: auto;
+    position: relative;
+    margin-top: 80px;
+}
